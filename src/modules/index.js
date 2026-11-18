@@ -10,6 +10,7 @@ app.use(express.json()); // Para que el servidor entienda JSON en el body
 app.use(cors());
 // Ruta para los endpoint de usuario
 app.use("/api", rutausuario);
+
 app.listen(PORT, (req, res) => {
   console.log(`Server iniciado en : http://localhost:${PORT}`);
 });
